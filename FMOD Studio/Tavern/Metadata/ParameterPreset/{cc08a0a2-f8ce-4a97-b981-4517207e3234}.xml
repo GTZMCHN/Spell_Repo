@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{cc08a0a2-f8ce-4a97-b981-4517207e3234}">
+		<property name="name">
+			<value>Spell_Necromancy</value>
+		</property>
+		<relationship name="folder">
+			<destination>{51e6489d-6a1c-4514-afdf-acce30363fd5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5164e8ac-f72e-45c6-8783-bb2d0c8636b9}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5164e8ac-f72e-45c6-8783-bb2d0c8636b9}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Looping</value>
+			<value>Release</value>
+			<value>Cancel</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
