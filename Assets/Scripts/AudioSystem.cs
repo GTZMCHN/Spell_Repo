@@ -290,20 +290,21 @@ public class AudioSystem : MonoBehaviour
     // SPELL CAST //
     public void SpellCast()
     {
-        SpellSound = RuntimeManager.CreateInstance(spellEvent);
-        SpellSound.setParameterByNameWithLabel("Spell", "Looping");
+        //SpellSound = RuntimeManager.CreateInstance(spellEvent);
+        SpellSound = RuntimeManager.CreateInstance("event:/Spell_Necromancy");
+        SpellSound.setParameterByNameWithLabel("Spell_Necromancy", "Looping");
         SpellSound.start();
     }
 
     public void SpellRelease()
     {
-        SpellSound.setParameterByNameWithLabel("Spell", "Release");
+        SpellSound.setParameterByNameWithLabel("Spell_Necromancy", "Release");
         SpellSound.release();
     }
 
     public void SpellCancel()
     {
-        SpellSound.setParameterByNameWithLabel("Spell", "Cancel");
+        SpellSound.setParameterByNameWithLabel("Spell_Necromancy", "Cancel");
         SpellSound.release();
     }
 

@@ -165,7 +165,7 @@ public class spell_cast_new : MonoBehaviour
             if (isAudioInitialized)
             {
                 audioSystem.SpellCancel(); 
-                audioSystem.SpellRelease();
+
             }
                 
             
@@ -200,7 +200,7 @@ public class spell_cast_new : MonoBehaviour
             if (isAudioInitialized)
             {
                 audioSystem.SpellCancel(); 
-                audioSystem.SpellRelease();
+                //audioSystem.SpellRelease();
             }
 
             chargeTimer = 0f;
